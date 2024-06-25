@@ -12,9 +12,9 @@
 */
 
 module.exports = {
-  support_email: "support@valueindustrial.ca",
-  support_phone: "(705) 995-4833",
-  url: "https://valueindustrial.ca",
+  support_email: "support@popabearswholesale.com",
+  support_phone: "(705)-995-4833",
+  url: "https://popabearswholesale.ca",
   build: {
     templates: {
       source: "src/templates",
