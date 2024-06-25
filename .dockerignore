@@ -1,0 +1,13 @@
+node_modules/
+packages/**/node_modules/
+packages/backend/.cache
+packages/backend/dist
+packages/backend/uploads
+packages/backend/.env
+packages/backend/medusa-config.js
+packages/mail/build_local
+packages/mail/build_production
+docker-compose.yml
+Dockerfile
+
+

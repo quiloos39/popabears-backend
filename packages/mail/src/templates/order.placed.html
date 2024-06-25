@@ -1,0 +1,124 @@
+<x-main>
+  <tr>
+    <td>
+      <h1 class="text-2xl text-[#004799] font-semibold">
+        Your Order Has Been Successfully Placed!
+      </h1>
+      <div class="text-sm">
+        <p>
+          Dear
+          <span class="font-semibold">@{{first_name}} @{{last_name}},</span>
+        </p>
+        <p>
+          Thank you for choosing
+          <span class="font-semibold">Value Industrial</span> for your recent
+          purchase. We are delighted to inform you that your order has been
+          successfully placed and is now being processed. Below, you will find a
+          summary of your order details:
+        </p>
+        <p><span class="font-semibold">Order Number:</span> @{{id}}</p>
+        <p><span class="font-semibold">Order Date:</span> @{{date}}</p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h2 class="text-sm text-[#E13413] font-semibold">Order Summary:</h2>
+      <div class="border border-solid border-[#EBEBEB] p-4">
+        @{{#each items}}
+        <div class="grid grid-cols-12 text-[#5E5E5E] text-sm mb-2">
+          <img src="@{{thumbnail}}" width="100" class="mr-2" />
+          <div class="col-span-11">
+            <p>@{{title}}</p>
+            <p>
+              Qty: @{{quantity}}
+              <span class="float-right font-semibold text-black"
+                >@{{unit_price}}</span
+              >
+            </p>
+          </div>
+        </div>
+        @{{/each}}
+        <hr class="border-0 my-2 h-px bg-[#EBEBEB]" />
+        <div class="text-sm">
+          <p class="text-[#004799]">
+            Sub Total<span class="float-right font-normal">@{{subtotal}}</span>
+          </p>
+          <p class="text-[#004799]">
+            Shipping<span class="float-right font-normal"
+              >@{{shipping_total}}</span
+            >
+          </p>
+          <p class="text-[#004799]">
+            Estimated Tax<span class="float-right font-normal"
+              >@{{tax_total}}</span
+            >
+          </p>
+          <hr class="border-0 my-2 h-px bg-[#EBEBEB]" />
+          <p class="text-lg font-semibold text-[#004799] my-0">
+            Order Total<span class="float-right">@{{total}}</span>
+          </p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h2 class="text-sm text-[#E13413] font-semibold">
+        Shipping Information:
+      </h2>
+      <div class="text-sm py-2 px-4 border border-solid border-[#EBEBEB]">
+        <p>
+          <span class="font-semibold">Method: </span>
+          Standard Shipping
+        </p>
+        <p>
+          <span class="font-semibold">Ship To: </span>
+          @{{address}}
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="text-sm">
+        <p>
+          Please review the details above to ensure accuracy. If you have any
+          questions or need to make changes to your order, please contact our
+          customer support team at
+          <a
+            href="mail:{{page.support_email}}"
+            class="no-underline text-[#505050] font-semibold"
+            >{{page.support_email}}</a
+          >
+          or
+          <a
+            href="tel:{{page.support_phone}}"
+            class="no-underline text-[#505050] font-semibold"
+            >{{page.support_phone}}</a
+          >
+          as soon as possible. Be sure to reference your order number @{{id}}
+          when reaching out to us. As soon as your order ships, you will receive
+          a shipping confirmation email with tracking information, allowing you
+          to monitor the progress of your delivery.
+        </p>
+        <p>
+          We sincerely appreciate your business and trust in Value Industrial.
+          If you require any assistance or have inquiries, please do not
+          hesitate to reach out to our dedicated customer support team.
+        </p>
+
+        <p>
+          Thank you for choosing Value Industrial. We look forward to fulfilling
+          your order and ensuring a seamless shopping experience.
+        </p>
+      </div>
+      <div>
+        <p class="text-sm my-0">Best Regards,</p>
+        <a class="font-semibold text-[#004799]"
+          >Value Industrial <span class="text-[#E13413]">Team</span>
+        </a>
+      </div>
+    </td>
+  </tr>
+</x-main>

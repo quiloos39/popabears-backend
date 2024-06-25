@@ -1,0 +1,9 @@
+node_modules/
+medusa-config.js
+dist/
+.env
+.cache/
+build/
+uploads/
+!uploads/.gitkeep
+logs/

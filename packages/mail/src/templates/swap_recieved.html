@@ -1,0 +1,62 @@
+<x-main>
+  <tr>
+    <td>
+      <h1 class="text-2xl text-[#004799] font-semibold">
+        Exchanged Item Successfully Delivered
+      </h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="text-sm">
+        <p>
+          Hi
+          <span class="font-semibold"
+            >@{{order.shipment_address.first_name}}
+            @{{order.shipment_address.last_name}},</span
+          >
+        </p>
+        <p>
+          We hope this email finds you well. We are pleased to inform you that
+          your exchanged item for order @{{order.id}} has been successfully
+          delivered to the address provided.
+        </p>
+        <p>
+          We trust that the item meets your expectations, and we are delighted
+          to have been able to assist you with the exchange.
+        </p>
+        <p>
+          If you have any further questions or require additional support,
+          please do not hesitate to contact our customer support team at
+          <a
+            href="mail:{{page.support_email}}"
+            class="no-underline text-[#505050] font-semibold"
+            >{{page.support_email}}</a
+          >
+          or by phone at
+          <a
+            href="tel:{{page.support_phone}}"
+            class="no-underline text-[#505050] font-semibold"
+            >{{page.support_phone}}</a
+          >. We are here to ensure your complete satisfaction.
+        </p>
+        <p>
+          Thank you for choosing Value Industrial. We appreciate your support
+          and look forward to serving you in the future.
+        </p>
+        <a
+          class="text-white bg-[#004799] w-full block uppercase py-4 text-center"
+          >Show Now</a
+        >
+        <p>Thank you for choosing Value Industrial.</p>
+      </div>
+
+      <div class="text-sm">
+        <p class="my-0">Best Regards,</p>
+        <a class="font-semibold text-[#004799]"
+          >Value Industrial <span class="text-[#E13413]">Team</span>
+        </a>
+      </div>
+    </td>
+  </tr>
+</x-main>

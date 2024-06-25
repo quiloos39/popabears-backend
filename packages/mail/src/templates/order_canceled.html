@@ -1,0 +1,40 @@
+<x-main>
+  <tr>
+    <td>
+      <h1 class="text-2xl text-[#004799] font-semibold">
+        We’re sorry to see you go
+      </h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="text-sm">
+        <p>
+          Hi,
+          <span class="font-semibold"
+            >@{{shipping_address.first_name}}
+            @{{shipping_address.last_name}}</span
+          >
+        </p>
+        <p>
+          We regret to inform you that your recent order #[Order Number] has
+          been cancelled due to unforeseen circumstances. We apologize for any
+          inconvenience and will process your refund promptly.
+        </p>
+        <p>
+          If you have any questions or require further assistance, please do not
+          hesitate to reach out to our customer support team.
+        </p>
+        <p>Thank you for your understanding and continued support.</p>
+
+        <p class="text-sm">
+          If you need help with anything. Please don’t hesitate to drop us an
+          email:
+          <a class="no-underline" href="mail:{{page.support_email}}"
+            >{{page.support_email}}</a
+          >
+        </p>
+      </div>
+    </td>
+  </tr>
+</x-main>

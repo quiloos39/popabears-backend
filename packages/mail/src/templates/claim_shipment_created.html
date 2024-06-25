@@ -1,0 +1,69 @@
+<x-main>
+  <tr>
+    <td>
+      <h1 class="text-2xl text-[#004799] font-semibold">
+        Shipping Service Complaint Confirmation
+      </h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="text-sm">
+        <p>
+          Hi
+          <span class="font-semibold"
+            >@{{order.shipment_address.first_name}}
+            @{{order.shipment_address.last_name}},</span
+          >
+        </p>
+        <p>I hope this email finds you well.</p>
+        <p>
+          I would like to express our sincere apologies for the inconvenience
+          you experienced with our shipping service. Your feedback is invaluable
+          to us, and we take your concerns seriously.
+        </p>
+        <p>
+          We have thoroughly reviewed your complaint and have taken immediate
+          steps to investigate and address the issues you raised. Our goal is to
+          ensure that such problems do not recur in the future.
+        </p>
+        <p>
+          Once we have completed our investigation and taken appropriate
+          actions, we will be sure to provide you with a detailed update on the
+          measures we have put in place to prevent similar issues. Your
+          satisfaction is our top priority, and we are committed to resolving
+          this matter to your full contentment.
+        </p>
+        <p>
+          If you have any further information to share or would like to discuss
+          this matter in more detail, please do not hesitate to reach out to our
+          customer support team at
+          <a
+            href="mail:{{page.support_email}}"
+            class="no-underline text-[#505050] font-semibold"
+            >{{page.support_email}}</a
+          >
+          or by phone at
+          <a
+            href="tel:{{page.support_phone}}"
+            class="no-underline text-[#505050] font-semibold"
+            >{{page.support_phone}}</a
+          >. We are here to assist you every step of the way.
+        </p>
+
+        <p>
+          Once again, I want to extend our apologies for any inconvenience this
+          has caused you. We appreciate your support and the opportunity to make
+          amends.
+        </p>
+      </div>
+
+      <div class="text-sm">
+        <p class="my-0">Best Regards,</p>
+        <a class="font-semibold text-[#004799]"
+          >Value Industrial <span class="text-[#E13413]">Team</span>
+        </a>
+      </div>
+    </td>
+  </tr>
+</x-main>

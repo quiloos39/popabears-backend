@@ -1,0 +1,59 @@
+<x-main>
+  <tr>
+    <td>
+      <h1 class="text-2xl text-[#004799] font-semibold">
+        Your Exchange Item has been Shipped
+      </h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="text-sm">
+        <p>
+          Hi
+          <span class="font-semibold"
+            >@{{order.shipping_address.first_name}}
+            @{{order.shipping_address.last_name}}</span
+          >,
+        </p>
+        <p>
+          We trust this message finds you well. We wish to inform you that we
+          will promptly notify you once the requested item for exchange has been
+          dispatched from our facility.
+        </p>
+        <p>
+          The exchanged items are shipped out to you, and you can expect to
+          receive them at your provided address within the estimated delivery
+          time, which is typically [Number of Days] business days.
+        </p>
+        <p>
+          Your satisfaction is of utmost importance to us, and we are committed
+          to ensuring a seamless exchange process. Rest assured, we will keep
+          you informed throughout every step of the way.
+        </p>
+        <p>
+          Should you have any inquiries or require further assistance, please do
+          not hesitate to contact our dedicated customer support team at
+          [Customer Support Email] or by phone at [Customer Support Phone
+          Number]. We are here to provide you with the highest level of service.
+        </p>
+        <p>
+          Thank you for choosing Value Industrial. We appreciate your support
+          and look forward to serving you in the future.
+        </p>
+        <a
+          class="text-white bg-[#004799] w-full block uppercase py-4 text-center"
+          >Show Now</a
+        >
+        <p>Thank you for choosing Value Industrial.</p>
+      </div>
+
+      <div class="text-sm">
+        <p class="my-0">Best Regards,</p>
+        <a class="font-semibold text-[#004799]"
+          >Value Industrial <span class="text-[#E13413]">Team</span>
+        </a>
+      </div>
+    </td>
+  </tr>
+</x-main>

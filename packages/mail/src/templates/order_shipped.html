@@ -1,0 +1,46 @@
+<x-main>
+  <tr>
+    <td>
+      <h1 class="text-2xl text-[#004799] font-semibold">
+        Your order is on its way!
+      </h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="text-sm">
+        <p>
+          Hi
+          <span class="font-semibold"
+            >@{{shipping_address.first_name}}
+            @{{shipping_address.last_name}},</span
+          >
+        </p>
+        <p>
+          Your order should arrive to your shipping address within 3 business
+          days. You can track your order’s status from Your Purchases. Please
+          note that orders over $500 require signature on delivery.
+        </p>
+        <p>
+          Thank for shopping on Value Industrial! You didn’t just get a great
+          deal - you also supported growth of the Value Industrial community,
+          which is pretty cool.
+        </p>
+        <a
+          href="{{page.url}}/order/@{{order.id}}"
+          class="py-4 rounded text-white font-semibold uppercase text-center block bg-[#004799] w-full mb-4 no-underline"
+          >View Order</a
+        >
+        <p>
+          If you need help with anything. Please don’t hesitate to drop us an
+          email:
+          <a
+            class="font-semibold no-underline text-[#505050]"
+            href="mail:{{page.support_email}}"
+            >{{ page.support_email }}</a
+          >
+        </p>
+      </div>
+    </td>
+  </tr>
+</x-main>
